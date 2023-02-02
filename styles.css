@@ -7,7 +7,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 8vw;
+  font-size: 300%
 }
 
 #gamefield {
@@ -30,19 +30,19 @@ h1 {
   width: 40vw;
   height: 40vw;
   background-size: 100%;
-  background-image: url(hand_rock.png);
+  background-image: url(rock.png);
 }
 
-.player.rock {
-  background-image: url(hand_rock.png);
+.player, #r {
+  background-image: url(rock.png);
 }
 
-.player.paper {
-  background-image: url(hand_paper.png);
+.player, #p {
+  background-image: url(paper.png);
 }
 
-.player.scissors {
-  background-image: url(hand_scissors.png);
+.player, #s {
+  background-image: url(scissors.png);
 }
 
 .player.shake {
@@ -84,7 +84,10 @@ h1 {
   }
 }
 
-#texts {
+
+
+
+/* #texts {
   position: absolute;
   width: 100%;
   margin-top: 10vw;
@@ -98,7 +101,7 @@ h1 {
 
 .hidden {
   display: none;
-}
+} */
 
 #buttons {
   display: flex;
@@ -118,14 +121,14 @@ h1 {
   transition: filter .8s;
 }
 
-button.rock {
+button#r {
   background-image: url(button_rock.png);
 }
 
-button.paper {
+button#p {
   background-image: url(button_paper.png);
 }
 
-button.scissors {
+button#s {
   background-image: url(button_scissors.png);
 }
